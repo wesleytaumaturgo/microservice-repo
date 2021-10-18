@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    hikari:
+      connection-timeout: 20000
+      maximum-pool-size: 5
+    url: jdbc:postgresql://localhost:5432/dev
+    username: postgres
+    password: 12345678
+  flyway:
+    schemas: fornecedor
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    hibernate.default_schema: fornecedor
